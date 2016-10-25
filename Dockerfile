@@ -28,6 +28,7 @@ ENV PATH=/opt/bitnami/php/sbin:/opt/bitnami/php/bin:/opt/bitnami/common/bin:~/.c
 ENV NODE_PATH=/opt/bitnami/node/lib/node_modules
 
 RUN npm install -g gulp
+RUN npm install -g yarn
 
 USER bitnami
 
