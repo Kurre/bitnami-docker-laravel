@@ -20,7 +20,8 @@ ENV STACKSMITH_STACK_ID="top24h8" \
     STACKSMITH_STACK_PRIVATE="1"
 
 RUN bitnami-pkg install node-6.6.0-1 --checksum 36f42bb71b35f95db3bb21d088fbd9438132fb2a7fb4d73b5951732db9a6771e
-RUN bitnami-pkg install php-5.6.26-1 --checksum b7a72ae78f9b19352bd400dfe027465c88a8643c0e5d9753f8d12f4ebae542a2
+## RUN bitnami-pkg install php-5.6.26-1 --checksum b7a72ae78f9b19352bd400dfe027465c88a8643c0e5d9753f8d12f4ebae542a2
+RUN bitnami-pkg install php-7.0.12-0 --checksum 72ad07dae640cd2a34bccf7c81bbe4a1ec7cd55eec40fc4dc8eef7a450be493a
 
 ENV PATH=/opt/bitnami/node/bin:/opt/bitnami/python/bin:$PATH
 ENV PATH=/opt/bitnami/php/sbin:/opt/bitnami/php/bin:/opt/bitnami/common/bin:~/.composer/vendor/bin:$PATH
